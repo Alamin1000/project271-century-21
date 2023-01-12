@@ -90,7 +90,7 @@ p:last-child{
     max-width: 1140px;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .container {
     max-width: 1666px;
   }
@@ -266,3 +266,115 @@ p:last-child{
   }
 }
 /* --preloader-end-- */
+
+
+/* ---hero-section--- */
+.hero-section {
+  padding: 130px 0;
+} 
+.hero-section__inner {
+
+}
+
+.hero__content {
+
+}
+.hero__content h4 {
+  margin-left: 13px;
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+.hero__content h4 .c-img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-30%,-50%);
+}
+.hero__content .h1 {
+  font-size: 64px;
+  margin: 0 0 37px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+.hero-buttons .button {
+
+}
+.hero__content .or {
+  font-size: 18px;
+  font-weight: 500;
+  color: #7F7F7F;
+  margin: 82px 0;
+}
+.hero-filter {
+  padding: 16px 22px;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
+  display: inline-block;
+}
+.hero-filter__inner {
+  display: flex;
+  align-items: center;
+}
+.hero-filter__left {
+  display: flex;
+}
+.hfl-slc {
+  padding: 0 20px;
+  border-right: 1px solid hwb(240 25% 75% / 0.233);
+}
+.hfl-slc:last-child {
+  border-right: none;
+}
+.hfl-slc .nice-select {
+  padding-right: 23px;
+  margin-bottom: 19px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.hfl-slc .nice-select::after {
+  border-color: var(--theme__color1);
+  height: 13px;
+  width: 13px;
+  margin-top: -11px;
+  right: 0;
+}
+.hfl-slc h6 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.hero-filter .hero-search {
+
+}
+.hero-search {
+  width: 248px;
+  background: #343434;
+  position: relative;
+  border-radius: 80px;
+}
+.hero-search .icon {
+  font-size: 29px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  color: #fff;
+  transform: translate(0,-50%);
+}
+.hero-search .input {
+  font-size: 18px;
+  padding: 10px 15px 10px 75px;
+  font-weight: 600;
+  min-height: 84px;
+  color: #fff;
+  background: transparent;
+  border-color: transparent;
+}
+/* ---hero-section---end */
