@@ -35,6 +35,23 @@
         padding: 10px 0;
     }
 
+    .menu-ex > li > a {
+        font-size: 13px;
+        gap: 6px;
+    }
+    .menu-ex > li > a .chevron {
+        width: 16px;
+    }
+    .menu-ex {
+        gap: 22px;
+    }
+    .header-ex__left .hero-search .input {
+        min-height: 50px;
+    }
+    .header-ex-section__inner {
+        padding: 20px 0;
+    }
+
 
     .hero__content h4 {
         margin-left: 8px;
@@ -55,7 +72,8 @@
         font-size: 14px;
         margin: 50px 0;
     }
-    .hfl-slc .nice-select {
+    .hfl-slc .nice-select,
+    .hfl-slc .nice-text {
         font-size: 14px;
         padding-right: 17px;
         margin-bottom: 12px;
@@ -263,7 +281,7 @@
 
 
     .cta-section {
-        padding: 50px 0 70px;
+        padding: 50px 0 85px;
     }
     .sec-title {
 	    margin: 0 0 20px;
@@ -318,6 +336,21 @@
     }
 
 
+    .sale-section__title h3 {
+        font-size: 22px;
+    }
+    .sale-section__title {
+        margin: 0 0 25px;
+    }
+    .sale-section {
+        padding: 50px 0;
+    }
+    .sale__grid {
+        grid-gap: 15px;
+    }
+    .pagination {
+        margin: 30px 0 0;
+    }
 }
 
 
@@ -340,6 +373,13 @@
         top: -65px;
         width: 490px;
     }
+
+    .header-ex-section__inner {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+
 }
 
 
@@ -395,6 +435,28 @@
     }
     .footer__menu-column {
         flex-grow: 1;
+    }
+
+
+
+    .sale__grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .header-ex__left {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header-ex__left .hero-search {
+        width: 100%;
+    }
+    .sale-section__title h3 {
+        font-size: 18px;
+    }
+    .sale-section__title {
+        margin: 0 0 20px;
+    }
+    .sale-section {
+        padding: 40px 0;
     }
 }
 
@@ -556,6 +618,22 @@
         gap: 6px;
         flex-direction: column;
     }
+
+
+    .header-ex__left__slc {
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-ex__left__slc .hfl-slc:first-child {
+        border-left: none;
+    }
+    .header-ex__left {
+        gap: 10px;
+    }
+    .header-ex-section__inner {
+        padding: 10px 0 20px;
+    }
+
 }
 
 
@@ -563,6 +641,10 @@
  .props-slide {
     width: 265px;
  }
+
+ .sale__grid {
+	grid-template-columns: repeat(1,1fr);
+}
 }
 
 
