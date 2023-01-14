@@ -53,9 +53,29 @@
       '<span class="fas fa-chevron-right fa-2x"></span>',
     ],
     responsive: {
-      0: {},
-      767: {},
-      1899: {},
+      0: {
+        margin: 12,
+        items: 2,
+        autoWidth: true,
+      },
+      575: {
+        margin: 14,
+        items: 2,
+      },
+      767: {
+        margin: 20,
+        items: 2,
+      },
+      991: {
+        margin: 24,
+        items: 3,
+      },
+      1199: {
+        margin: 24,
+      },
+      1899: {
+        margin: 40,
+      },
     },
   });
 
@@ -65,16 +85,27 @@
     responsiveClass: true,
     nav: false,
     dots: true,
-    dotEach: 1,
+    dotsEach: 1,
     items: 2,
     navText: [
       '<span class="fas fa-chevron-left fa-2x"></span>',
       '<span class="fas fa-chevron-right fa-2x"></span>',
     ],
     responsive: {
-      0: {},
-      767: {},
-      1899: {},
+      0: {
+        margin: 20,
+        items: 1,
+      },
+      767: {
+        margin: 24,
+        items: 2,
+      },
+      1199: {
+        margin: 24,
+      },
+      1899: {
+        margin: 40,
+      },
     },
   });
 })(jQuery);

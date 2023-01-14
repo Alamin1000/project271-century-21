@@ -32,6 +32,9 @@
     background: var(--text__color);
     color: #fff;
 }
+.default-button--rounded {
+    border-radius: 100px;
+}
 
 .text-button {
     font-size: 18px;
