@@ -41,29 +41,40 @@
   });
 
   // owl-carousel
-  $(".brand-active").owlCarousel({
+  $(".props-slider-active").owlCarousel({
     loop: true,
-    margin: 50,
+    margin: 40,
     responsiveClass: true,
     nav: false,
+    dots: false,
+    items: 4,
     navText: [
       '<span class="fas fa-chevron-left fa-2x"></span>',
       '<span class="fas fa-chevron-right fa-2x"></span>',
     ],
     responsive: {
-      0: {
-        items: 1,
-        nav: false,
-      },
-      600: {
-        items: 3,
-        nav: false,
-      },
-      1000: {
-        items: 4,
-        nav: false,
-        loop: false,
-      },
+      0: {},
+      767: {},
+      1899: {},
+    },
+  });
+
+  $(".testimonial__slider-active").owlCarousel({
+    loop: true,
+    margin: 40,
+    responsiveClass: true,
+    nav: false,
+    dots: true,
+    dotEach: 1,
+    items: 2,
+    navText: [
+      '<span class="fas fa-chevron-left fa-2x"></span>',
+      '<span class="fas fa-chevron-right fa-2x"></span>',
+    ],
+    responsive: {
+      0: {},
+      767: {},
+      1899: {},
     },
   });
 })(jQuery);

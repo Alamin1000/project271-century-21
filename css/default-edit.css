@@ -32,6 +32,40 @@
     background: var(--text__color);
     color: #fff;
 }
+
+.text-button {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--theme__color1);
+    transition: 0.3;
+    display: inline-block;
+}
+.text-button:hover {
+    color: #e4c368;
+}
+
+.big-button {
+    min-height: 81px;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 100px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--theme__color1);
+    transition: 0.3s;
+    border: 3px solid transparent;
+}
+.big-button.big-button--bordered--black {
+    border-color: #404041;
+    background: transparent;
+}
+.big-button.big-button--bordered--black:hover {
+    background: #404041;
+    color: #fff;
+}
 /* ---buttons---end */
 
 
