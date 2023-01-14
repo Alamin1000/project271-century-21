@@ -4,7 +4,7 @@
   // sticky
   var wind = $(window);
   var sticky = $("#sticky-header");
-  wind.on("scroll", function () {
+  wind.on("scroll load", function () {
     var scroll = wind.scrollTop();
     if (scroll < 5) {
       sticky.removeClass("sticky");
