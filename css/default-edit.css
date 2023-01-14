@@ -24,6 +24,13 @@
 .default-button.default-button--black:hover {
     background: #5f4f24;
 }
+.default-button.default-button--white {
+    background: #fff;
+    color: var(--text__color);
+}
+.default-button.default-button--white:hover {
+    background: var(--theme__color1);
+}
 .default-button.default-button--bordered-black {
     border-color: var(--text__color);
     background: transparent;

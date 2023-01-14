@@ -351,6 +351,56 @@
     .pagination {
         margin: 30px 0 0;
     }
+
+
+    .property-section {
+        padding: 50px 0;
+    }
+    .property-section__title h3 {
+        font-size: 22px;
+        margin: 0 0 9px;
+    }
+    .property-section__title .loc .icn {
+        width: 17px;
+    }
+    .property-section__title .loc {
+        margin: 0 0 10px;
+        gap: 8px;
+    }
+    .property-section__title h6 {
+        font-size: 12px;
+    }
+    .property-section__title {
+        margin: 0 0 35px;
+    }
+    .property__img-grid {
+        padding-bottom: 30px;
+        grid-gap: 15px;
+        margin-bottom: 30px;
+    }
+    .property__img-grid__item .c-button {
+        min-height: 39px;
+        border-radius: 4px;
+    }
+    .property__des-group h3 {
+        font-size: 20px;
+        margin: 0 0 22px;
+    }
+    .property__des-group {
+        padding-bottom: 30px;
+        margin-bottom: 35px;
+    }
+    .property__op-list__item h4 {
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+    .property__op-list {
+        grid-row-gap: 20px;
+    }
+    .property__op-list__item p .peb-b {
+        width: 70px;
+    }
+    
 }
 
 
@@ -378,6 +428,11 @@
         flex-direction: column;
         gap: 20px;
         align-items: stretch;
+    }
+
+
+    .property-section__inner {
+        padding: 0;
     }
 
 }
@@ -634,6 +689,38 @@
         padding: 10px 0 20px;
     }
 
+
+    .property-section__title h3 {
+        font-size: 18px;
+        margin: 0px 0 7px;
+    }
+    .property-section {
+        padding: 40px 0;
+    }
+    .property-section__title {
+        margin: 0 0 25px;
+    }
+    .property__img-grid {
+        padding-bottom: 20px;  
+        margin-bottom: 30px;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+    }
+    .property__img-grid__item {
+        grid-column: span 1;
+        border-radius: 5px;
+    }
+    .property__img-grid__item--huge {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .property__des-group h3 {
+        font-size: 18px;
+        margin: 0 0 14px;
+    }
+    .property__op-list {
+        grid-template-columns: 50% 50%;
+    }
 }
 
 
