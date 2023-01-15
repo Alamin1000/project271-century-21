@@ -33,9 +33,9 @@
         <div class="offmenu" id="menuParent">
           <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
           <ul class="mobile-menu">
-            <li><a class="active" href="#">Accueil</a></li>
+            <li><a class="active" href="javascript:void(0)">Accueil</a></li>
             <li><a href="/sale.html">A vendre</a></li>
-            <li><a href="/rend.html">A Louer</a></li>
+            <li><a href="/rent.html">A Louer</a></li>
             <li><a href="/services.html">Nos services</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">L'agence</a></li>
@@ -56,9 +56,11 @@
               </a>
               <div class="main-menu d-xl-block d-none">
                 <ul>
-                  <li><a class="active" href="#">Accueil</a></li>
+                  <li>
+                    <a class="active" href="javascript:void(0)">Accueil</a>
+                  </li>
                   <li><a href="/sale.html">A vendre</a></li>
-                  <li><a href="/rend.html">A Louer</a></li>
+                  <li><a href="/rent.html">A Louer</a></li>
                   <li><a href="/services.html">Nos services</a></li>
                   <li><a href="#">Events</a></li>
                   <li><a href="#">L'agence</a></li>
@@ -87,7 +89,12 @@
           <img src="images/hero-shape-1.png" alt="" class="hero__shape1" />
           <div class="container">
             <div class="hero-section__inner">
-              <img src="images/hero-img.png" alt="" class="hero__image" />
+              <div class="hero__image">
+                <img src="images/hero-img-1.png" alt="" class="img-1" />
+                <img src="images/hero-img-2.png" alt="" class="img-2" />
+                <img src="images/hero-img-3.png" alt="" class="img-3" />
+                <img src="images/hero-image-shape.png" alt="" class="back" />
+              </div>
               <div class="hero__content">
                 <h4>
                   <img src="images/text-c.svg" alt="" class="c-img" /> Century21
@@ -130,14 +137,18 @@
                         <h6>Clermont-Ferrand</h6>
                       </div>
                     </div>
-                    <div class="hero-search">
+                    <button class="hero-search hero-search--button">
+                      <i class="far fa-search icon"></i>
+                      <span class="input">RECHERCHER</span>
+                    </button>
+                    <!-- <div class="hero-search">
                       <i class="far fa-search icon"></i>
                       <input
                         class="input"
                         type="text"
                         placeholder="RECHERCHER"
                       />
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>

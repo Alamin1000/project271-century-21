@@ -34,8 +34,8 @@
           <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
           <ul class="mobile-menu">
             <li><a href="/">Accueil</a></li>
-            <li><a class="active" href="javascript:void(0)">A vendre</a></li>
-            <li><a href="/rent.html">A Louer</a></li>
+            <li><a href="/sale.html">A vendre</a></li>
+            <li><a class="active" href="javascript:void(0)">A Louer</a></li>
             <li><a href="/services.html">Nos services</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">L'agence</a></li>
@@ -47,8 +47,8 @@
       <!-- offcanvas-start-end -->
 
       <!-- header-section -->
-      <header class="header-section" id="sticky-header">
-        <div class="header-in">
+      <header class="header-section header--dark">
+        <div class="header-in position-static">
           <div class="container">
             <div class="header-section__inner">
               <a href="index.html" class="header__logo">
@@ -57,10 +57,10 @@
               <div class="main-menu d-xl-block d-none">
                 <ul>
                   <li><a href="/">Accueil</a></li>
+                  <li><a href="/sale.html">A vendre</a></li>
                   <li>
-                    <a class="active" href="javascript:void(0)">A vendre</a>
+                    <a class="active" href="javascript:void(0)">A Louer</a>
                   </li>
-                  <li><a href="/rent.html">A Louer</a></li>
                   <li><a href="/services.html">Nos services</a></li>
                   <li><a href="#">Events</a></li>
                   <li><a href="#">L'agence</a></li>
@@ -82,152 +82,227 @@
       </header>
       <!--End header-section -->
 
+      <!-- header-ex-section -->
+      <section class="header-ex-section">
+        <div class="container">
+          <div class="header-ex-section__inner">
+            <div class="header-ex__left">
+              <div class="header-ex__left__slc">
+                <div class="hfl-slc">
+                  <select class="nice-select">
+                    <option>Type de bien</option>
+                    <option>Type de bien</option>
+                  </select>
+                  <h6>Maison ou appartement</h6>
+                </div>
+                <div class="hfl-slc">
+                  <div class="nice-text">Localisation</div>
+                  <h6>Clermont-Ferrand</h6>
+                </div>
+                <div class="hfl-slc">
+                  <div class="nice-text">Chambre</div>
+                  <h6>
+                    1 &nbsp;
+                    <span class="dm">2 &nbsp; 3 &nbsp; 4 &nbsp; 5+</span>
+                  </h6>
+                </div>
+                <div class="hfl-slc">
+                  <div class="nice-text">Budget (min)</div>
+                  <h6><span class="dm">0 €</span></h6>
+                </div>
+                <div class="hfl-slc">
+                  <div class="nice-text">Budget (max)</div>
+                  <h6><span class="dm">0 €</span></h6>
+                </div>
+              </div>
+              <button
+                class="hero-search hero-search--ex-header hero-search--button"
+              >
+                <i class="far fa-search icon"></i>
+                <span class="input">RECHERCHER</span>
+              </button>
+              <!-- <div class="hero-search hero-search--ex-header hero-search--button">
+                <i class="far fa-search icon"></i>
+                <input class="input" type="text" placeholder="RECHERCHER" />
+              </div> -->
+            </div>
+            <div class="header-ex__right">
+              <ul class="menu-ex">
+                <li class="dropdown">
+                  <a href="#" class="" data-bs-toggle="dropdown">
+                    <span class="txt">Dernier ajout</span>
+                    <img src="images/ex-chevron.svg" alt="" class="chevron" />
+                  </a>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#">Lorem ipsum</a></li>
+                      <li><a href="#">Lorem ipsum</a></li>
+                      <li><a href="#">Lorem ipsum</a></li>
+                      <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Réinitialiser</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- header-ex-section-end -->
+
       <!-- main -->
       <main>
-        <!-- property-section -->
-        <section class="property-section">
+        <!-- sale-section -->
+        <div class="sale-section">
           <div class="container">
-            <div class="property-section__inner">
-              <div class="property-section__title">
-                <h3 class="h3">Maison 3 fac avec jardin</h3>
-                <p class="loc">
-                  <img src="images/location.svg" alt="" class="icn" />Rebaix
-                </p>
-                <h6>Maison • 4 chambres • 3 salles de bain • 245 m²</h6>
+            <div class="sale-section__inner">
+              <div class="sale-section__title">
+                <h3 class="mb-0">115 Biens à Louer</h3>
               </div>
 
-              <div class="property__img-grid">
-                <div
-                  class="property__img-grid__item property__img-grid__item--huge"
-                >
-                  <img
-                    src="images/property-grid-img-1.png"
-                    alt=""
-                    class="img"
-                  />
-                </div>
-                <div class="property__img-grid__item">
-                  <img
-                    src="images/property-grid-img-2.png"
-                    alt=""
-                    class="img"
-                  />
-                </div>
-                <div class="property__img-grid__item">
-                  <img
-                    src="images/property-grid-img-3.png"
-                    alt=""
-                    class="img"
-                  />
-                </div>
-                <div class="property__img-grid__item">
-                  <img
-                    src="images/property-grid-img-4.png"
-                    alt=""
-                    class="img"
-                  />
-                </div>
-                <div class="property__img-grid__item">
-                  <img
-                    src="images/property-grid-img-5.png"
-                    alt=""
-                    class="img"
-                  />
-                  <a
-                    href="#"
-                    class="default-button default-button--white c-button"
-                    >5 autres photos</a
-                  >
-                </div>
-              </div>
-
-              <div class="property__des-group">
-                <h3>Description du bien</h3>
-                <p>
-                  Uniquement au sein de notre agence et à 45 minutes de Paris et
-                  à 20 mns de Senlis dans un joli village, proche forêt,
-                  l'agence Marc Foujols vous présente un relais de poste.
-                  Pierres et poutres sont au rendez-vous. De nombreuses
-                  dépendances dont un atelier de céramiste, un tennis, un auvent
-                  pour prolonger les soirées d'été. Cave en terre battue avec
-                  pressoir géant. Bel ensemble avec un joli jardin. Cette maison
-                  offre actuellement 4 chambres mais peut en avoir 6. Idéal
-                  résidence secondaire. Toiture refaite, chaudière toute neuve.
-                  dont 5.28 % honoraires TTC à la charge de l'acquéreur.
-                </p>
-              </div>
-
-              <div class="property__des-group">
-                <h3 class="pb-2">Informations générales</h3>
-                <div class="property__op-list">
-                  <div class="property__op-list__item">
-                    <h4>Référence</h4>
-                    <p>V4716</p>
-                  </div>
-                  <div class="property__op-list__item">
-                    <h4>TYPE</h4>
-                    <p>Appartement</p>
-                  </div>
-                  <div class="property__op-list__item">
-                    <h4>Catégorie</h4>
-                    <p>A vendre</p>
-                  </div>
-                  <div class="property__op-list__item">
-                    <h4>NOMBRE DE CHAMBRE</h4>
-                    <p>4</p>
-                  </div>
-                  <div class="property__op-list__item">
-                    <h4>NOMBRE DE SALLE DE BAIN</h4>
-                    <p>2</p>
-                  </div>
-                  <div class="property__op-list__item">
-                    <h4>JARDIN</h4>
-                    <p>Oui</p>
-                  </div>
-                  <div class="property__op-list__item">
-                    <h4>GARAGE</h4>
-                    <p>Oui</p>
-                  </div>
-                  <div class="property__op-list__item">
-                    <h4>TERRASSE</h4>
-                    <p>Oui</p>
+              <div class="sale__grid">
+                <div class="prop-card prop-card--shadow">
+                  <a href="proparty.html" class="prop-card__image">
+                    <img src="images/sale-prop-1.png" alt="" class="img" />
+                  </a>
+                  <div class="prop-card__content">
+                    <p class="loc">
+                      <img src="images/location.svg" alt="" class="icn" />Rebaix
+                    </p>
+                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
+                    <p class="price">
+                      459 000 <span class="color-theme1">€</span>
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <div class="property__des-group">
-                <h3 class="pb-2">Surface des pièces</h3>
-                <div class="property__op-list">
-                  <div class="property__op-list__item">
-                    <h4>LIVING</h4>
-                    <p>204 m²</p>
-                  </div>
-                  <div class="property__op-list__item">
-                    <h4>TERRASSE</h4>
-                    <p>0 m²</p>
-                  </div>
-                  <div class="property__op-list__item">
-                    <h4>TERRAIN</h4>
-                    <p>1238 m²</p>
+                <div class="prop-card prop-card--shadow">
+                  <a href="proparty.html" class="prop-card__image">
+                    <img src="images/sale-prop-2.png" alt="" class="img" />
+                  </a>
+                  <div class="prop-card__content">
+                    <p class="loc">
+                      <img src="images/location.svg" alt="" class="icn" />Rebaix
+                    </p>
+                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
+                    <p class="price">
+                      459 000 <span class="color-theme1">€</span>
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              <div class="property__des-group">
-                <h3 class="pb-2">Informations complétementaires</h3>
-                <div class="property__op-list">
-                  <div class="property__op-list__item">
-                    <h4>Type de chauffage</h4>
-                    <p class="pt-2">
-                      <img src="images/peb-b.png" alt="" class="peb-b" />
+                <div class="prop-card prop-card--shadow">
+                  <a href="proparty.html" class="prop-card__image">
+                    <img src="images/sale-prop-3.png" alt="" class="img" />
+                  </a>
+                  <div class="prop-card__content">
+                    <p class="loc">
+                      <img src="images/location.svg" alt="" class="icn" />Rebaix
+                    </p>
+                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
+                    <p class="price">
+                      459 000 <span class="color-theme1">€</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prop-card prop-card--shadow">
+                  <a href="proparty.html" class="prop-card__image">
+                    <img src="images/sale-prop-4.png" alt="" class="img" />
+                  </a>
+                  <div class="prop-card__content">
+                    <p class="loc">
+                      <img src="images/location.svg" alt="" class="icn" />Rebaix
+                    </p>
+                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
+                    <p class="price">
+                      459 000 <span class="color-theme1">€</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prop-card prop-card--shadow">
+                  <a href="proparty.html" class="prop-card__image">
+                    <img src="images/sale-prop-5.png" alt="" class="img" />
+                  </a>
+                  <div class="prop-card__content">
+                    <p class="loc">
+                      <img src="images/location.svg" alt="" class="icn" />Rebaix
+                    </p>
+                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
+                    <p class="price">
+                      459 000 <span class="color-theme1">€</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prop-card prop-card--shadow">
+                  <a href="proparty.html" class="prop-card__image">
+                    <img src="images/sale-prop-6.png" alt="" class="img" />
+                  </a>
+                  <div class="prop-card__content">
+                    <p class="loc">
+                      <img src="images/location.svg" alt="" class="icn" />Rebaix
+                    </p>
+                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
+                    <p class="price">
+                      459 000 <span class="color-theme1">€</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prop-card prop-card--shadow">
+                  <a href="proparty.html" class="prop-card__image">
+                    <img src="images/sale-prop-7.png" alt="" class="img" />
+                  </a>
+                  <div class="prop-card__content">
+                    <p class="loc">
+                      <img src="images/location.svg" alt="" class="icn" />Rebaix
+                    </p>
+                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
+                    <p class="price">
+                      459 000 <span class="color-theme1">€</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prop-card prop-card--shadow">
+                  <a href="proparty.html" class="prop-card__image">
+                    <img src="images/sale-prop-8.png" alt="" class="img" />
+                  </a>
+                  <div class="prop-card__content">
+                    <p class="loc">
+                      <img src="images/location.svg" alt="" class="icn" />Rebaix
+                    </p>
+                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
+                    <p class="price">
+                      459 000 <span class="color-theme1">€</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="prop-card prop-card--shadow">
+                  <a href="proparty.html" class="prop-card__image">
+                    <img src="images/sale-prop-9.png" alt="" class="img" />
+                  </a>
+                  <div class="prop-card__content">
+                    <p class="loc">
+                      <img src="images/location.svg" alt="" class="icn" />Rebaix
+                    </p>
+                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
+                    <p class="price">
+                      459 000 <span class="color-theme1">€</span>
                     </p>
                   </div>
                 </div>
               </div>
+
+              <div class="pagination">
+                <ul>
+                  <li><a class="active" href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">11</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </section>
-        <!-- property-section-end -->
+        </div>
+        <!-- sale-section-end -->
 
         <!-- cta-section -->
         <section class="cta-section">

@@ -34,9 +34,9 @@
           <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
           <ul class="mobile-menu">
             <li><a href="/">Accueil</a></li>
-            <li><a class="active" href="javascript:void(0)">A vendre</a></li>
+            <li><a href="/sale.html">A vendre</a></li>
             <li><a href="/rent.html">A Louer</a></li>
-            <li><a href="/services.html">Nos services</a></li>
+            <li><a class="active" href="javascript:void(0)">Nos services</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">L'agence</a></li>
             <li><a href="#">Contact</a></li>
@@ -47,8 +47,8 @@
       <!-- offcanvas-start-end -->
 
       <!-- header-section -->
-      <header class="header-section header--dark">
-        <div class="header-in position-static">
+      <header class="header-section" id="sticky-header">
+        <div class="header-in">
           <div class="container">
             <div class="header-section__inner">
               <a href="index.html" class="header__logo">
@@ -57,11 +57,11 @@
               <div class="main-menu d-xl-block d-none">
                 <ul>
                   <li><a href="/">Accueil</a></li>
-                  <li>
-                    <a class="active" href="javascript:void(0)">A vendre</a>
-                  </li>
+                  <li><a href="/sale.html">A vendre</a></li>
                   <li><a href="/rent.html">A Louer</a></li>
-                  <li><a href="/services.html">Nos services</a></li>
+                  <li>
+                    <a class="active" href="javascript:void(0)">Nos services</a>
+                  </li>
                   <li><a href="#">Events</a></li>
                   <li><a href="#">L'agence</a></li>
                   <li><a href="#">Contact</a></li>
@@ -82,82 +82,199 @@
       </header>
       <!--End header-section -->
 
-      <!-- header-ex-section -->
-      <section class="header-ex-section">
-        <div class="container">
-          <div class="header-ex-section__inner">
-            <div class="header-ex__left">
-              <div class="header-ex__left__slc">
-                <div class="hfl-slc">
-                  <select class="nice-select">
-                    <option>Type de bien</option>
-                    <option>Type de bien</option>
-                  </select>
-                  <h6>Maison ou appartement</h6>
-                </div>
-                <div class="hfl-slc">
-                  <div class="nice-text">Localisation</div>
-                  <h6>Clermont-Ferrand</h6>
-                </div>
-                <div class="hfl-slc">
-                  <div class="nice-text">Chambre</div>
-                  <h6>
-                    1 &nbsp;
-                    <span class="dm">2 &nbsp; 3 &nbsp; 4 &nbsp; 5+</span>
-                  </h6>
-                </div>
-                <div class="hfl-slc">
-                  <div class="nice-text">Budget (min)</div>
-                  <h6><span class="dm">0 €</span></h6>
-                </div>
-                <div class="hfl-slc">
-                  <div class="nice-text">Budget (max)</div>
-                  <h6><span class="dm">0 €</span></h6>
+      <!-- main -->
+      <main>
+        <!-- service-hero-section -->
+        <div class="service-hero-section">
+          <div class="container">
+            <div class="service-hero-section__inner">
+              <div class="service-hero__left">
+                <h1 class="h1">Nos Service</h1>
+                <h4>
+                  Comment vendre son bien <br class="d-md-block d-none" />
+                  au meilleur prix et en toute sécurité?
+                </h4>
+                <a href="#" class="default-button button">ESTIMER MON BIEN</a>
+                <div class="hero-rating-wrap">
+                  <div class="rating-option">
+                    <div class="rating-option-top">
+                      <div class="icon">
+                        <img src="images/Google__G__Logo.png" alt="" />
+                      </div>
+                      <p>Avis Google</p>
+                    </div>
+                    <div class="rating">
+                      <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <h5>4.9/5</h5>
+                    </div>
+                  </div>
+                  <div class="rating-option">
+                    <div class="rating-option-top">
+                      <div class="icon">
+                        <img src="images/facebook.png" alt="" />
+                      </div>
+                      <p>Avis Facebook</p>
+                    </div>
+                    <div class="rating">
+                      <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <h5>4.9/5</h5>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <button
-                class="hero-search hero-search--ex-header hero-search--button"
-              >
-                <i class="far fa-search icon"></i>
-                <span class="input">RECHERCHER</span>
-              </button>
-              <!-- <div class="hero-search hero-search--ex-header hero-search--button">
-                <i class="far fa-search icon"></i>
-                <input class="input" type="text" placeholder="RECHERCHER" />
-              </div> -->
-            </div>
-            <div class="header-ex__right">
-              <ul class="menu-ex">
-                <li class="dropdown">
-                  <a href="#" class="" data-bs-toggle="dropdown">
-                    <span class="txt">Dernier ajout</span>
-                    <img src="images/ex-chevron.svg" alt="" class="chevron" />
-                  </a>
-                  <div class="dropdown-menu">
-                    <ul>
-                      <li><a href="#">Lorem ipsum</a></li>
-                      <li><a href="#">Lorem ipsum</a></li>
-                      <li><a href="#">Lorem ipsum</a></li>
-                      <li><a href="#">Lorem ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li><a href="#">Réinitialiser</a></li>
-              </ul>
+              <div class="service-hero__right">
+                <div class="hero-video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/gWoj4pR4-Os"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- header-ex-section-end -->
+        <!-- service-hero-section-end -->
 
-      <!-- main -->
-      <main>
+        <!-- pro-section -->
+        <section class="pro-section">
+          <div class="container">
+            <div class="pro-section__inner">
+              <div class="pro-section__title">
+                <h3>DÉCOUVRIR LA MÉTHODE CENTURY21 CLERMONT EN 4 ÉTAPES</h3>
+                <a class="arrow-bottom" href="#pro__row1"
+                  ><i class="far fa-arrow-down"></i
+                ></a>
+              </div>
+              <div class="pro-row___wrapper">
+                <!-- pro-row -->
+                <div class="pro__row" id="pro__row1">
+                  <div class="pro__row__image-blk">
+                    <img src="images/pro-row-1.png" alt="" class="img" />
+                  </div>
+                  <div class="pro__row__content-blk">
+                    <div class="cont-blk">
+                      <h2 class="h2">
+                        <div class="icon">
+                          <img
+                            class="img"
+                            src="images/magnifiy-star.svg"
+                            alt=""
+                          />
+                        </div>
+                        <span class="txt">L'évaluation</span>
+                      </h2>
+                      <p>
+                        Grâce au Homestaging virtuel, nous aidons les potentiels
+                        acquéreurs à se projeter plus facilement dans un bien.
+                        Cela favorise la prise de décision et réduis le délais
+                        de vente.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- pro-row-end -->
+                <!-- pro-row -->
+                <div class="pro__row">
+                  <div class="pro__row__image-blk">
+                    <img src="images/pro-row-2.png" alt="" class="img" />
+                  </div>
+                  <div class="pro__row__content-blk">
+                    <div class="cont-blk">
+                      <h2 class="h2">
+                        <div class="icon">
+                          <img class="img" src="images/img.svg" alt="" />
+                        </div>
+                        <span class="txt">La mise en valeur</span>
+                      </h2>
+                      <p>
+                        Grâce au Homestaging virtuel, nous aidons les potentiels
+                        acquéreurs à se projeter plus facilement dans un bien.
+                        Cela favorise la prise de décision et réduis le délais
+                        de vente.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- pro-row-end -->
+                <!-- pro-row -->
+                <div class="pro__row">
+                  <div class="pro__row__image-blk">
+                    <img src="images/pro-row-3.png" alt="" class="img" />
+                  </div>
+                  <div class="pro__row__content-blk">
+                    <div class="cont-blk">
+                      <h2 class="h2">
+                        <div class="icon">
+                          <img
+                            class="img"
+                            src="images/person-group.svg"
+                            alt=""
+                          />
+                        </div>
+                        <span class="txt">La sélection du client</span>
+                      </h2>
+                      <p>
+                        Grâce au Homestaging virtuel, nous aidons les potentiels
+                        acquéreurs à se projeter plus facilement dans un bien.
+                        Cela favorise la prise de décision et réduis le délais
+                        de vente.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- pro-row-end -->
+                <!-- pro-row -->
+                <div class="pro__row">
+                  <div class="pro__row__image-blk">
+                    <img src="images/pro-row-4.png" alt="" class="img" />
+                  </div>
+                  <div class="pro__row__content-blk">
+                    <div class="cont-blk">
+                      <h2 class="h2">
+                        <div class="icon">
+                          <img class="img" src="images/cog-glow.svg" alt="" />
+                        </div>
+                        <span class="txt">Un suivi personnalisé</span>
+                      </h2>
+                      <p>
+                        Grâce au Homestaging virtuel, nous aidons les potentiels
+                        acquéreurs à se projeter plus facilement dans un bien.
+                        Cela favorise la prise de décision et réduis le délais
+                        de vente.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- pro-row-end -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- pro-section-end -->
+
         <!-- sale-section -->
         <div class="sale-section">
           <div class="container">
             <div class="sale-section__inner">
-              <div class="sale-section__title">
-                <h3 class="mb-0">184 Biens à Vendre</h3>
+              <div class="sale-section__title d-flex justify-content-center">
+                <h2 class="mb-0 h2 text-center justify-content-center">Nos derniers biens vendus</h3>
               </div>
 
               <div class="sale__grid">
@@ -191,7 +308,7 @@
                 </div>
                 <div class="prop-card prop-card--shadow">
                   <a href="proparty.html" class="prop-card__image">
-                    <img src="images/sale-prop-3.png" alt="" class="img" />
+                    <img src="images/sale-prop-10.png" alt="" class="img" />
                   </a>
                   <div class="prop-card__content">
                     <p class="loc">
@@ -203,101 +320,6 @@
                     </p>
                   </div>
                 </div>
-                <div class="prop-card prop-card--shadow">
-                  <a href="proparty.html" class="prop-card__image">
-                    <img src="images/sale-prop-4.png" alt="" class="img" />
-                  </a>
-                  <div class="prop-card__content">
-                    <p class="loc">
-                      <img src="images/location.svg" alt="" class="icn" />Rebaix
-                    </p>
-                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
-                    <p class="price">
-                      459 000 <span class="color-theme1">€</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="prop-card prop-card--shadow">
-                  <a href="proparty.html" class="prop-card__image">
-                    <img src="images/sale-prop-5.png" alt="" class="img" />
-                  </a>
-                  <div class="prop-card__content">
-                    <p class="loc">
-                      <img src="images/location.svg" alt="" class="icn" />Rebaix
-                    </p>
-                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
-                    <p class="price">
-                      459 000 <span class="color-theme1">€</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="prop-card prop-card--shadow">
-                  <a href="proparty.html" class="prop-card__image">
-                    <img src="images/sale-prop-6.png" alt="" class="img" />
-                  </a>
-                  <div class="prop-card__content">
-                    <p class="loc">
-                      <img src="images/location.svg" alt="" class="icn" />Rebaix
-                    </p>
-                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
-                    <p class="price">
-                      459 000 <span class="color-theme1">€</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="prop-card prop-card--shadow">
-                  <a href="proparty.html" class="prop-card__image">
-                    <img src="images/sale-prop-7.png" alt="" class="img" />
-                  </a>
-                  <div class="prop-card__content">
-                    <p class="loc">
-                      <img src="images/location.svg" alt="" class="icn" />Rebaix
-                    </p>
-                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
-                    <p class="price">
-                      459 000 <span class="color-theme1">€</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="prop-card prop-card--shadow">
-                  <a href="proparty.html" class="prop-card__image">
-                    <img src="images/sale-prop-8.png" alt="" class="img" />
-                  </a>
-                  <div class="prop-card__content">
-                    <p class="loc">
-                      <img src="images/location.svg" alt="" class="icn" />Rebaix
-                    </p>
-                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
-                    <p class="price">
-                      459 000 <span class="color-theme1">€</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="prop-card prop-card--shadow">
-                  <a href="proparty.html" class="prop-card__image">
-                    <img src="images/sale-prop-9.png" alt="" class="img" />
-                  </a>
-                  <div class="prop-card__content">
-                    <p class="loc">
-                      <img src="images/location.svg" alt="" class="icn" />Rebaix
-                    </p>
-                    <p><a href="#">Maison • 4 chambres • 245 m²</a></p>
-                    <p class="price">
-                      459 000 <span class="color-theme1">€</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pagination">
-                <ul>
-                  <li><a class="active" href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">...</a></li>
-                  <li><a href="#">11</a></li>
-                </ul>
               </div>
             </div>
           </div>

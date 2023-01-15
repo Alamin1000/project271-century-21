@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Hello World!</title>
+    <title>Century21</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="description" content="Site description will be here" />
+    <link rel="icon" href="images/fav.png" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
     <link
       href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css"
@@ -30,54 +30,51 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+        <div class="offmenu" id="menuParent">
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+          <ul class="mobile-menu">
+            <li><a class="active" href="javascript:void(0)">Accueil</a></li>
+            <li><a href="/sale.html">A vendre</a></li>
+            <li><a href="/rent.html">A Louer</a></li>
+            <li><a href="/services.html">Nos services</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">L'agence</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
 
       <!-- header-section -->
       <header class="header-section">
-        <div class="header-in">
+        <div class="header-in position-static">
           <div class="container">
             <div class="header-section__inner">
-              <a href="index.html" class="header-logo">
+              <a href="index.html" class="header__logo">
                 <img src="images/logo.svg" alt="" />
               </a>
-              <div class="main-menu">
+              <div class="main-menu d-xl-block d-none">
                 <ul>
-                  <li><a href="#">Accueil</a></li>
-                  <li><a href="#">A vendre</a></li>
-                  <li><a href="#">A Louer</a></li>
-                  <li><a href="#">Nos services</a></li>
+                  <li>
+                    <a class="active" href="javascript:void(0)">Accueil</a>
+                  </li>
+                  <li><a href="/sale.html">A vendre</a></li>
+                  <li><a href="/rent.html">A Louer</a></li>
+                  <li><a href="/services.html">Nos services</a></li>
                   <li><a href="#">Events</a></li>
                   <li><a href="#">L'agence</a></li>
                   <li><a href="#">Contact</a></li>
                 </ul>
               </div>
-              <a href="#" class="default-button default-button--bordered">
+              <a
+                href="#"
+                class="default-button default-button--black ms-auto d-xl-flex d-none"
+              >
                 ESTIMER MON BIEN
+              </a>
+              <a href="#" class="offcanvas-open d-xl-none ms-auto">
+                <i class="far fa-bars"></i>
               </a>
             </div>
           </div>
@@ -89,14 +86,31 @@
       <main>
         <!-- hero-section -->
         <section class="hero-section">
+          <img src="images/hero-shape-1.png" alt="" class="hero__shape1" />
           <div class="container">
             <div class="hero-section__inner">
+              <div class="hero__image">
+                <img src="images/hero-img-1.png" alt="" class="img-1" />
+                <img src="images/hero-img-2.png" alt="" class="img-2" />
+                <img src="images/hero-img-3.png" alt="" class="img-3" />
+                <img src="images/hero-image-shape.png" alt="" class="back" />
+              </div>
               <div class="hero__content">
-                <h4>Century21</h4>
+                <h4>
+                  <img src="images/text-c.svg" alt="" class="c-img" /> Century21
+                </h4>
                 <h1 class="h1">
                   Chez nous, <br />
                   vous êtes déjà chez vous !
                 </h1>
+                <div class="hero-buttons">
+                  <a href="#" class="button default-button">ESTIMER MON BIEN</a>
+                  <a
+                    href="#"
+                    class="button default-button default-button--bordered-black"
+                    >NOS SERVICES</a
+                  >
+                </div>
                 <p class="or">OU</p>
                 <div class="hero-filter">
                   <div class="hero-filter__inner">
@@ -123,10 +137,18 @@
                         <h6>Clermont-Ferrand</h6>
                       </div>
                     </div>
-                    <div class="hero-search">
+                    <button class="hero-search hero-search--button">
                       <i class="far fa-search icon"></i>
-                      <input type="text" placeholder="RECHERCHER" />
-                    </div>
+                      <span class="input">RECHERCHER</span>
+                    </button>
+                    <!-- <div class="hero-search">
+                      <i class="far fa-search icon"></i>
+                      <input
+                        class="input"
+                        type="text"
+                        placeholder="RECHERCHER"
+                      />
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -134,112 +156,22 @@
           </div>
         </section>
         <!-- hero-section end -->
-
-        <!-- eng-section -->
-        <section class="eng-section">
-          <div class="container">
-            <div class="eng-section__inner">
-              <div class="eng__image">
-                <img src="images/engagement.png" alt="" />
-              </div>
-              <div class="eng__content">
-                <div class="eng__content__title">
-                  <h2>Notre engagement</h2>
-                </div>
-                <div class="eng__cont__main">
-                  <div class="eng__cont__m-left">
-                    <div class="eng__cont__ml-s">
-                      <h3>
-                        98%
-                        <img
-                          src="images/arrow-top-right.svg"
-                          alt=""
-                          class="arr"
-                        />
-                      </h3>
-                      <p>Taux de réussite de l’agence</p>
-                    </div>
-                    <div class="eng__cont__ml-s">
-                      <h3>
-                        53 J
-                        <img
-                          src="images/arrow-top-right-g.svg"
-                          alt=""
-                          class="arr"
-                        />
-                      </h3>
-                      <p>De temps moyen de vente</p>
-                    </div>
-                    <div class="eng__cont__ml-s">
-                      <h3>
-                        97%
-                        <img
-                          src="images/arrow-top-right-g.svg"
-                          alt=""
-                          class="arr"
-                        />
-                      </h3>
-                      <p>Taux de satisfaction</p>
-                    </div>
-                  </div>
-                  <div class="eng__cont__m-right">
-                    <div class="eng__cont__m-single">
-                      <div class="icon">
-                        <img src="images/Google__G__Logo.png" alt="" />
-                      </div>
-                      <div class="rating">
-                        <ul>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                        </ul>
-                        <h5>4.9/5</h5>
-                      </div>
-                    </div>
-                    <div class="eng__cont__m-single">
-                      <div class="icon">
-                        <img src="images/facebook.png" alt="" />
-                      </div>
-                      <div class="rating">
-                        <ul>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                          <li><i class="fas fa-star"></i></li>
-                        </ul>
-                        <h5>4.9/5</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- eng-section-end -->
       </main>
       <!-- main end -->
-
-      <!-- footer-section -->
-      <footer class="footer-section"></footer>
-      <!--End footer-section -->
     </div>
     <!-- main-wrap -->
 
     <!-- js -->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.js"></script>
-    <script src="js/selectivizr-1.0.2.min.js"></script>
-    <script src="js/waypoint.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
     <!-- End All Js -->
   </body>

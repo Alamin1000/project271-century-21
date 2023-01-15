@@ -401,6 +401,66 @@
         width: 70px;
     }
     
+
+    .hfl-slc .nice-select .list {
+        margin-top: 42px;
+    }
+    .hero-search--button .input {
+        padding-left: 10px;
+    }
+
+
+    .service-hero__left h4 {
+        font-size: 21px;
+        margin: 0 0 20px;
+    }
+    .service-hero__left .h1 {
+        font-size: 47px;
+        margin: 0 0 15px;
+    }
+    .rating-option .icon {
+        width: 26px;
+        height: 26px;
+    }
+    .rating-option .rating-option-top {
+        margin: 0 0 8px;
+        gap: 10px;
+    }
+    .rating-option .rating-option-top p {
+        font-size: 13px;
+    }
+    .rating-option .rating ul li {
+        font-size: 11px;
+    }
+    .rating-option .rating h5 {
+        font-size: 13px;
+    }
+    .hero-rating-wrap {
+        margin-top: 40px;
+        padding: 17px 17px;
+        gap: 22px;
+        border-radius: 5px;
+    }
+    .service-hero-section {
+        padding: 70px 0;
+    }
+    .pro-section__title h3 {
+        font-size: 18px;
+        margin: 0 0 12px;
+    }
+    .pro-section__title .arrow-bottom {
+        font-size: 23px;
+    }
+    .pro-section__title {
+        margin: 0 0 60px;
+    }
+    .pro-row___wrapper {
+        gap: 60px;
+    }
+    .hero-video {
+        height: 350px;
+    }
+
 }
 
 
@@ -435,6 +495,15 @@
         padding: 0;
     }
 
+
+    .service-hero__left h4 {
+        font-size: 18px;
+        margin: 0 0 18px;
+    }
+    .service-hero__left .h1 {
+        font-size: 40px;
+        margin: 0 0 10px;
+    }
 }
 
 
@@ -512,6 +581,22 @@
     }
     .sale-section {
         padding: 40px 0;
+    }
+
+    .service-hero-section__inner {
+        flex-wrap: wrap;
+    }
+    .service-hero__left {
+        width: 100%;
+    }
+    .service-hero__right {
+        width: 100%;
+        order: -1;
+    }
+
+
+    .pro-row___wrapper .pro__row:nth-child(2n+1) .pro__row__image-blk {
+        order: -1;
     }
 }
 
@@ -721,6 +806,37 @@
     .property__op-list {
         grid-template-columns: 50% 50%;
     }
+
+    .service-hero-section__inner {
+        gap: 30px;
+    }
+    .hero-video {
+        height: 250px;
+    }
+    .service-hero-section {
+        padding: 40px 0;
+    }
+    .service-hero__left .h1 {
+        font-size: 28px;
+        margin: 0 0 9px;
+    }
+    .service-hero__left h4 {
+        font-size: 16px;
+        margin: 0 0 16px;
+    }
+    .pro-section__title h3 {
+        font-size: 16px;
+        margin: 0 0 8px;
+    }
+    .pro-section__title .arrow-bottom {
+        font-size: 20px;
+    }
+    .pro-section__title {
+        margin: 0 0 35px;
+    }
+    .pro-row___wrapper {
+        gap: 40px;
+    }
 }
 
 
@@ -731,6 +847,10 @@
 
  .sale__grid {
 	grid-template-columns: repeat(1,1fr);
+}
+
+.hero-video {
+    height: 180px;
 }
 }
 
