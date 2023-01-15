@@ -11,6 +11,7 @@
     <link rel="icon" href="images/fav.png" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
     <link
       href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css"
       rel="stylesheet"
@@ -97,7 +98,8 @@
               </div>
 
               <div class="property__img-grid">
-                <div
+                <a
+                  href="images/property-grid-img-1.png"
                   class="property__img-grid__item property__img-grid__item--huge"
                 >
                   <img
@@ -105,40 +107,64 @@
                     alt=""
                     class="img"
                   />
-                </div>
-                <div class="property__img-grid__item">
+                </a>
+                <a
+                  href="images/property-grid-img-2.png"
+                  class="property__img-grid__item"
+                >
                   <img
                     src="images/property-grid-img-2.png"
                     alt=""
                     class="img"
                   />
-                </div>
-                <div class="property__img-grid__item">
+                </a>
+                <a
+                  href="images/property-grid-img-3.png"
+                  class="property__img-grid__item"
+                >
                   <img
                     src="images/property-grid-img-3.png"
                     alt=""
                     class="img"
                   />
-                </div>
-                <div class="property__img-grid__item">
+                </a>
+                <a
+                  href="images/property-grid-img-4.png"
+                  class="property__img-grid__item"
+                >
                   <img
                     src="images/property-grid-img-4.png"
                     alt=""
                     class="img"
                   />
-                </div>
-                <div class="property__img-grid__item">
+                </a>
+                <div
+                  href="images/property-grid-img-5.png"
+                  class="property__img-grid__item"
+                >
                   <img
                     src="images/property-grid-img-5.png"
                     alt=""
                     class="img"
                   />
                   <a
-                    href="#"
+                    href="images/property-grid-img-5.png"
                     class="default-button default-button--white c-button"
                     >5 autres photos</a
                   >
                 </div>
+                <!-- hidden-images -->
+                <a
+                  href="images/prop-card-1.png"
+                  class="property__img-grid__item d-none"
+                >
+                </a>
+                <a
+                  href="images/prop-card-2.png"
+                  class="property__img-grid__item d-none"
+                >
+                </a>
+                <!-- hidden-images-end -->
               </div>
 
               <div class="property__des-group">
@@ -407,6 +433,34 @@
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script>
+      //magnificPopup
+      $(".popup-img").magnificPopup({
+        type: "image",
+      });
+      $(".popup-video").magnificPopup({
+        type: "iframe",
+      });
+      // magnific-popup-img-gallery
+      $(".property__img-grid a").magnificPopup({
+        type: "image",
+        gallery: {
+          enabled: true,
+        },
+      });
+      //multiple-img-gallery
+      $(".image-box").each(function () {
+        // the containers for all your galleries
+        $(this).magnificPopup({
+          delegate: ".img", // the selector for gallery item
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+    </script>
     <script src="js/main.js"></script>
     <!-- End All Js -->
   </body>
