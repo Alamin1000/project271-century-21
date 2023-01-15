@@ -505,6 +505,9 @@ p:last-child{
 .hfl-slc {
   padding: 0 20px;
   border-right: 1px solid hwb(240 25% 75% / 0.233);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .hfl-slc:last-child {
   border-right: none;
@@ -521,6 +524,7 @@ p:last-child{
 }
 .hfl-slc .nice-text {
   padding-right: 0 !important;
+  line-height: 1;
 }
 .hfl-slc .nice-select::after {
   border-color: var(--theme__color1);
@@ -529,10 +533,26 @@ p:last-child{
   margin-top: -11px;
   right: 0;
 }
-.hfl-slc h6 {
+.hfl-slc h6,
+.hfl-slc .h6-input {
   font-size: 16px;
   font-weight: 500;
   margin: 0;
+  padding: 0;
+}
+.hfl-slc .h6-input {
+  height: 22.4px;
+  margin-top: 0px;
+  color: rgba(64, 64, 65, 0.6);
+  border-color: transparent;
+  width: 150px;
+}
+.hfl-slc h6 label .txt {
+  cursor: pointer;
+  color: rgba(64, 64, 65, 0.6);
+}
+.hfl-slc h6 label input:checked ~ .txt {
+  color: var(--text__color);
 }
 .hfl-slc h6 .dm {
   color: rgba(64, 64, 65, 0.6);

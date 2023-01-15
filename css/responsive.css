@@ -84,9 +84,17 @@
         margin-top: -7px;
         border-width: 1px;
     }
-    .hfl-slc h6 {
+    .hfl-slc h6,
+    .hfl-slc .h6-input {
         font-size: 13px;
     }
+    .hfl-slc .h6-input {
+        width: 100px;
+    }
+    .hfl-slc .h6-input-sdf {
+        width: 125px;
+    }
+
     .hero-search .icon {
         font-size: 20px;
         left: 15px;
@@ -661,6 +669,9 @@
         width: 100%;
         border-bottom: 1px solid hwb(240 25% 75% / 0.233);
         border-right: none;
+    }
+    .hfl-slc .h6-input {
+        width: 100%;
     }
     .hero-filter__left {
         width: 100%;
