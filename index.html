@@ -297,7 +297,15 @@
             <div class="pro-section__inner">
               <div class="pro__row">
                 <div class="pro__row__image-blk">
-                  <img src="images/mise-en-scene.png.png" alt="" class="img" />
+                  <div class="beforeAfter">
+                    <img
+                      src="https://source.unsplash.com/owUOxR4Jq6I/960x450"
+                    />
+                    <img
+                      src="https://source.unsplash.com/ILaRPrqovI0/960x450"
+                    />
+                  </div>
+                  <!-- <img src="images/mise-en-scene.png.png" alt="" class="img" /> -->
                 </div>
                 <div class="pro__row__content-blk">
                   <div class="cont-blk">
@@ -895,6 +903,25 @@
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/beforeafter.jquery-1.0.0.min.js"></script>
+    <script>
+      $(".beforeAfter").beforeAfter({
+        movable: true,
+        clickMove: true,
+        position: 50,
+        separatorColor: "#fafafa",
+        bulletColor: "#fafafa",
+        onMoveStart: function (e) {
+          console.log(event.target);
+        },
+        onMoving: function () {
+          console.log(event.target);
+        },
+        onMoveEnd: function () {
+          console.log(event.target);
+        },
+      });
+    </script>
     <script src="js/main.js"></script>
     <!-- End All Js -->
   </body>

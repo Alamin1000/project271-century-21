@@ -36,7 +36,9 @@
             <li><a href="/">Accueil</a></li>
             <li><a href="/sale.html">A vendre</a></li>
             <li><a href="/rent.html">A Louer</a></li>
-            <li><a class="active" href="javascript:void(0)">Nos services</a></li>
+            <li>
+              <a class="active" href="javascript:void(0)">Nos services</a>
+            </li>
             <li><a href="#">Events</a></li>
             <li><a href="#">L'agence</a></li>
             <li><a href="#">Contact</a></li>
@@ -193,7 +195,15 @@
                 <!-- pro-row -->
                 <div class="pro__row">
                   <div class="pro__row__image-blk">
-                    <img src="images/pro-row-2.png" alt="" class="img" />
+                    <div class="beforeAfter">
+                      <img
+                        src="https://source.unsplash.com/owUOxR4Jq6I/960x450"
+                      />
+                      <img
+                        src="https://source.unsplash.com/ILaRPrqovI0/960x450"
+                      />
+                    </div>
+                    <!-- <img src="images/pro-row-2.png" alt="" class="img" /> -->
                   </div>
                   <div class="pro__row__content-blk">
                     <div class="cont-blk">
@@ -274,7 +284,9 @@
           <div class="container">
             <div class="sale-section__inner">
               <div class="sale-section__title d-flex justify-content-center">
-                <h2 class="mb-0 h2 text-center justify-content-center">Nos derniers biens vendus</h3>
+                <h2 class="mb-0 h2 text-center justify-content-center">
+                  Nos derniers biens vendus
+                </h2>
               </div>
 
               <div class="sale__grid">
@@ -504,6 +516,25 @@
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/beforeafter.jquery-1.0.0.min.js"></script>
+    <script>
+      $(".beforeAfter").beforeAfter({
+        movable: true,
+        clickMove: true,
+        position: 50,
+        separatorColor: "#fafafa",
+        bulletColor: "#fafafa",
+        onMoveStart: function (e) {
+          console.log(event.target);
+        },
+        onMoving: function () {
+          console.log(event.target);
+        },
+        onMoveEnd: function () {
+          console.log(event.target);
+        },
+      });
+    </script>
     <script src="js/main.js"></script>
     <!-- End All Js -->
   </body>

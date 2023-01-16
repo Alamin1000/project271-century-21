@@ -806,6 +806,13 @@ p:last-child{
 .pro__row__content-blk .cont-blk .h2 {
   margin: 0 0 20px 15px;
 }
+
+.beforeAfter {
+  border-radius: 18px;
+}
+.beforeAfter img {
+  max-width: initial;
+}
 /* ---pro-section---end */
 
 
